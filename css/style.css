@@ -13,6 +13,7 @@ nav{
     text-align: center ;
     justify-content: space-evenly;
     font-size: 20px; 
+    font-family:'Cormorant Garamond', serif;
 }
 
 .logo{
@@ -65,6 +66,7 @@ footer{
     background-color: #373738;
     width:100%;
     padding:25px;
+    font-family:'Cormorant Garamond', serif;
 }
 footer, ul{
     display: inline-block;
