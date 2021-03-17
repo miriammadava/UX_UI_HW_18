@@ -79,13 +79,50 @@ div .flexContainer{
     justify-content: space-evenly;
 }
 
+.myWork{
+    text-align: center;
+}
+.workGrid{
+    display: grid;
+    grid-template-columns:3, 1fr;
+    grid-template-rows: 3, 1fr;
+    grid-template-areas: 
+    " project1Overview project1Image project1Image " 
+    " project2Image project2Image project2Overview "
+    " project3Overview project3Image project3Image " ;
+}
+.project1Overview{
+    grid-area: project1Overview;
+}
+.project1Image{
+    grid-area: project1Image;
+    background-color: dimgrey;
+    height: 300px;
+}
+.project2Overview{
+    grid-area: project2Overview;
+}
+.project2Image{
+    grid-area: project2Image;
+    background-color: dimgrey;
+    height: 300px;
+}
+.project3Overview{
+    grid-area: project3Overview;
+}
+.project3Image{
+    grid-area: project3Image;
+    background-color: dimgrey;
+    height: 300px;
+}
 
-footer{
+footer {
     background-color: #373738;
     width:100%;
     padding:25px;
     font-family:'Cormorant Garamond', serif;
 }
+
 footer, ul{
     display: inline-block;
     vertical-align: top;
