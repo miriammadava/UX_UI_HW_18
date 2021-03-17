@@ -203,3 +203,19 @@ padding: 1%;
 text-align: left;
 color: white;
 }
+
+@media only screen and (max-width:600){
+.workGrid{
+    padding: 5pt;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "project1Overview" 
+    "project1Image" 
+    "project2Overview" 
+    "project2Image" 
+    "project3Overview" 
+    "project3Image" 
+}
+}
