@@ -123,6 +123,8 @@ div .flexContainer{
     font-size: 21px;
     font-weight: 600;
     text-decoration: underline;
+    padding: 25pt;
+    
 }
 
 .project1{
@@ -160,10 +162,10 @@ div .flexContainer{
 }
 .project1Image{
     grid-area: project1Image;
-    background-color: rgb(179, 181, 184);  
+    background-color: rgb(179, 181, 184); 
 }
 .project1Image img{
-    height: 200pt;
+    height: auto;
 }
 .project2Overview{
     grid-area: project2Overview;
@@ -173,7 +175,7 @@ div .flexContainer{
     background-color: rgb(179, 181, 184);
 }
 .project2Image img{
-    height: 200pt;
+    height: auto;
 }
 
 .project3Overview{
@@ -184,7 +186,7 @@ div .flexContainer{
     background-color: rgb(179, 181, 184);
 }
 .project3Image img{
-    height: 200pt;
+    height: auto;
 }
 
 footer {
@@ -204,18 +206,40 @@ text-align: left;
 color: white;
 }
 
-@media only screen and (max-width:600){
-.workGrid{
-    padding: 5pt;
+@media only screen and (max-width:600px) {
+.project1{
     display: grid;
+    width: 100%;
     grid-template-columns:1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "project1Overview" 
-    "project1Image" 
+    "project1Image" ;
+    }
+.project2{
+    display: grid;
+    width: 100%;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
     "project2Overview" 
-    "project2Image" 
+    "project2Image" ;}
+
+ .project3{
+    display: grid;
+    width: 100%;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
     "project3Overview" 
-    "project3Image" 
-}
+    "project3Image" ;}   
+    
+button{
+    background-color: #373738;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 15px;}
+
 }
