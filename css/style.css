@@ -82,15 +82,31 @@ div .flexContainer{
 .myWork{
     text-align: center;
 }
-.workGrid{
+.project1{
+    padding: 5pt;
     display: grid;
-    grid-template-columns:3, 1fr;
-    grid-template-rows: 3, 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    " project1Overview project1Image project1Image " 
-    " project2Image project2Image project2Overview "
-    " project3Overview project3Image project3Image " ;
+    " project1Overview project1Image project1Image ";
 }
+.project2{
+    padding: 5pt;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    " project2Image project2Image project2Overview  ";
+}
+.project3{
+    padding: 5pt;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    " project3Overview project3Image project3Image  ";
+}
+
 .project1Overview{
     grid-area: project1Overview;
 }
@@ -98,6 +114,7 @@ div .flexContainer{
     grid-area: project1Image;
     background-color: dimgrey;
     height: 300px;
+
 }
 .project2Overview{
     grid-area: project2Overview;
