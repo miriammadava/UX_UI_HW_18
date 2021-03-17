@@ -60,30 +60,66 @@ color: white;
 padding: 15px;
 text-decoration: none;
 font-size: 14px;
-border-radius: 20px;
+border-radius: 15px;
 }
 
 .mySkills{
 text-align: center;
 }
 
+.mySkills h1{
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.mySkills h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.mySkills p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+}
+
 .flexContainer{
     display: flex;
-    padding: 15px;
+    padding: 15pt;
 }
 
 div .flexContainer{
     width: 33%;
+    height: 200px;
     margin: auto;
     padding: 25pt;
+    text-align:center;
     justify-content: space-evenly;
 }
 
 .myWork{
     text-align: center;
 }
+
+.myWork h1{
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.myWork h4{
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.myWork p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+}
+
 .project1{
-    padding: 5pt;
+    padding-bottom: 5pt;
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -91,7 +127,7 @@ div .flexContainer{
     " project1Overview project1Image project1Image ";
 }
 .project2{
-    padding: 5pt;
+    padding-bottom: 5pt;
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -99,7 +135,7 @@ div .flexContainer{
     " project2Image project2Image project2Overview  ";
 }
 .project3{
-    padding: 5pt;
+    padding-bottom: 5pt;
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -109,12 +145,12 @@ div .flexContainer{
 
 .project1Overview{
     grid-area: project1Overview;
+    
 }
 .project1Image{
     grid-area: project1Image;
     background-color: dimgrey;
     height: 300px;
-
 }
 .project2Overview{
     grid-area: project2Overview;
